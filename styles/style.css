@@ -251,14 +251,6 @@ hr {
         grid-template-rows: auto;
     }
 
-    .gallery {
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-
     .content {
         margin-left: .5rem;
         margin-right: .5rem;
@@ -274,6 +266,22 @@ hr {
 
     .content-info {
         text-align: center;
+    }
+
+    .gallery {
+        margin: 0;
+        display: block;
+    }
+
+    .gallery-images {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .gallery-img {
+        width: 40%;
+        height: 40%;
     }
 
     .footer {
