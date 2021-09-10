@@ -185,7 +185,7 @@ hr {
 }
 
 .content {
-    margin-bottom: 2em;
+    max-height: 500px;
 }
 
 .content-img,
