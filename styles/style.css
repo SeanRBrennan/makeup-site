@@ -6,10 +6,10 @@
 
 
 :root {
-    --clr-light: rgb(253, 154, 171);
-    --clr-dark: rgb(172, 91, 118);
+    --clr-light: #E8C7C8;
+    --clr-dark: #E8C7C8;
 
-    --fnt-dark: rgb(69, 69, 69);
+    --fnt-dark: black;
     --fnt-light: rgb(252, 107, 132); 
 }
 body {
