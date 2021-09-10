@@ -11,47 +11,65 @@
     <title>Gloria Bigler</title>
 </head>
     <body>
-        <header class="navigation-wrapper">
-            <div class="logo">
-                <h3 class="logo-title">Bigler Makeup</h3>
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="nav-background-color">
+            <header class="navigation-wrapper constraint">
+                    <div class="logo">
+                        <h3 class="logo-title">Bigler Makeup</h3>
+                    </div>
+                    <button class="nav-toggle" aria-label="toggle navigation">
+                        <span class="hamburger"></span>
+                    </button>
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+            </header>
+        </div>
 
-        <section class="hero pink">
+        <section class="hero">
             <h1 class="hero-title">Gloria Bigler</h1>
-            <img class="hero-img" src="https://img.allw.mn/thumbs/r1/jz/ys9jkouk5b73ec52c4689197388259_924x924.jpg">
+            <img class="hero-img" src="./images/IMG_6157.jpg">
             <p class="hero-description"><i>Makeup for any Occassion.</i></p>
         </section>
 
         <hr class="main-content-break">
 
-        <section class="main-content">
+        <section class="main-content constraint">
             <div class="content">
                 <h2 class="content-title">About</h2>
-                <img class="content-img" src="https://img.allw.mn/thumbs/r1/jz/ys9jkouk5b73ec52c4689197388259_924x924.jpg">
-                <p class="content-info">Read about Gloria.</p>
+                <a class="content-link link-img" href="./pages/about.html">
+                    <img class="content-img" src="./images/IMG_6159.jpg">
+                </a>
+                <p class="content-info">
+                    <a class="content-link" href="./pages/about.html">
+                        Read about Gloria
+                    </a>
+                </p>
             </div>
             <div class="content">
                 <h2 class="content-title">Gallery</h2>
-                <img class="content-img" src="https://img.allw.mn/thumbs/r1/jz/ys9jkouk5b73ec52c4689197388259_924x924.jpg">
-                <p class="content-info">See what I can do.</p>
+                <a class="content-link link-img" href="./pages/gallery.html">
+                    <img class="content-img" src="./images/IMG_6619.jpg">
+                </a>   
+                <p class="content-info">
+                    <a class="content-link" href="./pages/gallery.html">        
+                        See what I can do
+                    </a>
+                </p>
             </div>
             <div class="content">
                 <h2 class="content-title">Pricing</h2>
-                <img class="content-img" src="https://img.allw.mn/thumbs/r1/jz/ys9jkouk5b73ec52c4689197388259_924x924.jpg">
-                <p class="content-info">Fit your needs</p>
+                <a class="content-link link-img" href="#">
+                    <img class="content-img" src="./images/IMG_6714.jpg">
+                </a>
+                <p class="content-info">
+                    <a class="content-link" href="#">
+                        Fit your needs
+                    </a>
+                </p>
             </div>
         </section>
         <footer class="footer">
@@ -59,9 +77,8 @@
             <div class="footer-content">
                 <h3 class="footer-title">Contact Me</h3>
                 <div class="footer-links">
-                    <a class="footer-link" href="#"><img class="footer-logo" src="./images/facebook.svg"></a>
-                    <a class="footer-link" href="#"><img class="footer-logo" src="./images/twitter.svg"></a>
-                    <a class="footer-link" href="#"><img class="footer-logo" src="./images/instagram.svg"></a>
+                    <a class="footer-link" href="mailto:gloriabiglerbooking@gmail.com" target="_blank"><img class="footer-logo" src="./images/gmail.svg"></a>
+                    <a class="footer-link" href="https://www.instagram.com/missgloriairene/" target="_blank"><img class="footer-logo" src="./images/instagram.svg"></a>
                 </div>
             </div>
         </footer>
