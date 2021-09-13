@@ -32,6 +32,12 @@ hr {
     border: 1px solid var(--fnt-dark);
 }
 
+h1, 
+h2,
+h3 {
+    font-weight: 300;
+}
+
 .nav-background-color {
     background: var(--clr-dark);
 }
@@ -260,8 +266,6 @@ hr {
 
 .gallery-img {
     margin-bottom: 1rem;
-    height: 50%;
-    width: 50%;
 }
 
 .gallery-break {
