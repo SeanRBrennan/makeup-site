@@ -195,7 +195,8 @@ h3,
     max-height: 500px;
 }
 
-.content-img {
+.content-img,
+.gallery-img {
     transition: transform .3s, box-shadow .3s;
 }
 
@@ -224,7 +225,8 @@ h3,
     color: rgb(252, 142, 160);
 }
 
-.content-img:hover {
+.content-img:hover,
+.gallery-img:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.3);
 }
@@ -264,12 +266,12 @@ h3,
 
 .gallery-images {
     max-width: 1375px;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 1rem;
 }
 
 .gallery-img {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .gallery-break {
@@ -283,6 +285,140 @@ h3,
     color: var(--fnt-dark);
 }
 
+/* modal */
+
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    background-color: var(--clr-dark);
+    width: 800px;
+    height: 800px;
+    max-width: 70vw;
+    max-height: 70vh;
+    border-radius: 10px;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.close-modal {
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    height: 30px;
+    width: 30px;
+    background-color: var(--clr-dark);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal-carousel {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-image {
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.carousel-track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-button {
+   position: absolute;
+   top: 50%;
+   transform: translateX(-50%);
+   font-size: 16px;
+   border: none;
+   text-decoration: none;
+   background: transparent;
+   cursor: pointer; 
+}
+
+.left {
+    left: -10px;
+    z-index: 1;
+}
+
+.left-arrow,
+.right-arrow {
+    width: 18px;
+}
+
+.left-arrow {
+    transform: rotate(180deg);
+}
+
+.right {
+    right: -37px;
+    z-index: 1;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicator {
+    margin: 0 .5rem;
+    padding: .5rem;
+    border: 0;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.current-slide-dot {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.is-hidden {display: none;}
 
 /* footer */
 
@@ -366,7 +502,7 @@ h3,
 
     .one-photo {
         object-fit: cover;
-        width: 100%;
+        width: 100vw;
         height: 100%;
     }
 

@@ -37,22 +37,50 @@
         <hr class="main-content-break">
 
         <section class="main-content gallery constraint">
-          <div class="gallery-content two-photo">
-              <div class="gallery-images">
-                <img class="gallery-img" src="../images/IMG_6616.jpg">
-                <img class="gallery-img" src="../images/IMG_6615.jpg">
+          <div class="gallery-content">
+              <div class="gallery-images" id="wedding">
+                <img class="gallery-img open-modal" src="../images/IMG_6616.jpg">
+                <img class="gallery-img open-modal" src="../images/IMG_6615.jpg">
               </div>
           </div>
-          <div class="gallery-content">
+          <div class="gallery-content" id="night-out">
               <div class="gallery-images one-photo-container">
-                <img class="gallery-img  one-photo" src="../images/IMG_6619.jpg">
+                <img class="gallery-img open-modal" src="../images/IMG_6619.jpg">
               </div> 
           </div>
-          <div class="gallery-content two-photo">
+          <div class="gallery-content" id="photoshoot">
               <div class="gallery-images">
-                <img class="gallery-img" src="../images/IMG_6713.jpg">
-                <img class="gallery-img" src="../images/IMG_6714.jpg">
+                <img class="gallery-img open-modal" src="../images/IMG_6713.jpg">
+                <img class="gallery-img open-modal" src="../images/IMG_6714.jpg">
               </div>
+          </div>
+
+          <div class="modal-container" id="modal-container">
+            <div class="modal">
+                <button id="close-modal" class="close-modal"><img src="../images/delete.svg"></button>
+                <div class="modal-carousel">
+                    <button class="carousel-button left is-hidden"><img class="left-arrow" src="../images/move-to-next.svg"></button>
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <li class="carousel-slide current-slide">
+                                <img class="carousel-image" src="../images/IMG_6713.jpg">
+                            </li>
+                            <li class="carousel-slide">
+                                <img class="carousel-image" src="../images/IMG_6714.jpg">
+                            </li>
+                            <li class="carousel-slide">
+                                <img class="carousel-image" src="../images/IMG_6619.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel-button right"><img class="right-arrow" src="../images/move-to-next.svg"></button>
+                    <div class="carousel-nav">
+                        <button class="carousel-indicator current-slide-dot"></button>
+                        <button class="carousel-indicator"></button>
+                        <button class="carousel-indicator"></button>
+                    </div>   
+                </div>
+            </div>
           </div>
       </section>
 
